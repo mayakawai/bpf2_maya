@@ -1,8 +1,8 @@
 import { createRoot } from "react-dom/client";
 import "./assets/tailwind.css";
-import Sidebar from "./layouts/Sidebar";
-import Header from "./layouts/Header";
-import Dashboard from "./pages/Dashboard";
+import Sidebar from "../layouts/Sidebar";
+import Header from "../layouts/Header";
+import Dashboard from "../pages/Dashboard";
 
 createRoot(document.getElementById("root")).render(
   <div id="app-container" className="bg-gray-100 min-h-screen flex">
