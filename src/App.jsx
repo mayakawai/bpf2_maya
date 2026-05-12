@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import NotFound from "./pages/NotFound";
+import Guest from "./pages/Guest";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                   <Route path="*" element={<NotFound />}/>
                   <Route path="/orders" element={<Orders />} />
                   <Route path="/customers" element={<Customers />} />
+                  <Route path="/sedap" element={<Guest />} />
               </Routes>
             </div>
           </div>
