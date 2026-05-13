@@ -1,33 +1,33 @@
 const testimonials = [
     {
         id: 1,
-        name: "Maya",
+        name: "Maya Syafana",
         review: "Makanannya sangat enak dan pengirimannya cepat.",
-        avatar: "https://avatar.iran.liara.run/public/1"
+        avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=maya"
     },
     {
         id: 2,
-        name: "Budi",
+        name: "Wawa Surawa",
         review: "Pelayanannya ramah dan mudah digunakan.",
-        avatar: "https://avatar.iran.liara.run/public/2"
+        avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=wawa"
     },
     {
         id: 3,
-        name: "Salsa",
+        name: "Aleksa Putri",
         review: "Pilihan makanannya lengkap.",
-        avatar: "https://avatar.iran.liara.run/public/3"
+        avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=aleksaputri"
     },
     {
         id: 4,
-        name: "Dika",
+        name: "Zikrul Zika",
         review: "Harga makanan cukup terjangkau.",
-        avatar: "https://avatar.iran.liara.run/public/4"
+        avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=zikrul"
     },
     {
         id: 5,
-        name: "Rina",
+        name: "Aqilah Deqil",
         review: "Aplikasinya sangat membantu saat lapar.",
-        avatar: "https://avatar.iran.liara.run/public/5"
+        avatar: "https://api.dicebear.com/7.x/adventurer/svg?seed=aqilah"
     }
 ];
 

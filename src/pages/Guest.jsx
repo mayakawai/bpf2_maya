@@ -7,7 +7,7 @@ import Footer from "../components/sedap/Footer";
 
 export default function Guest() {
     return (
-        <div>
+        <div className="bg-[#f8f5f0] overflow-x-hidden">
             <Navbar />
             <Hero />
             <About />

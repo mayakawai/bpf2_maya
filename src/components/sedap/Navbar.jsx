@@ -1,42 +1,36 @@
 export default function Navbar() {
     return (
-        <nav 
-            id="navbar-container"
-            className="flex items-center justify-between px-8 py-4 bg-white border-b border-garis"
+        <nav
+            className="flex items-center justify-between px-14 py-6 bg-transparent absolute w-full z-50 text-white"
         >
 
-            <h1 
-                id="navbar-logo"
-                className="text-2xl font-poppins-extrabold text-hijau"
+            <h1
+                className="text-4xl font-poppins-extrabold"
             >
                 Sedap
             </h1>
 
-            <ul 
-                id="navbar-menu"
-                className="flex items-center gap-6 text-teks font-medium"
+            <ul
+                className="flex gap-10 font-medium text-lg"
             >
                 <li>Home</li>
                 <li>Produk</li>
                 <li>Tentang</li>
-                <li>Kontak</li>
+                <li>Testimoni</li>
             </ul>
 
-            <div 
-                id="navbar-button"
-                className="flex items-center gap-3"
-            >
-                <button 
-                    className="px-4 py-2 border border-hijau text-hijau rounded-lg"
-                >
+            <div className="flex gap-4">
+
+                <button
+                    className="border border-white text-black bg-green-500 px-5 py-2 rounded-full font-medium">
                     Login
                 </button>
 
-                <button 
-                    className="px-4 py-2 bg-hijau text-white rounded-lg"
-                >
+                <button
+                    className="bg-hijau text-black px-5 py-2 rounded-full font-medium">
                     Register
                 </button>
+
             </div>
 
         </nav>
