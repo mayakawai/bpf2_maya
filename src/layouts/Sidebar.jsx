@@ -1,45 +1,62 @@
-import { BiUserCircle } from "react-icons/bi"; 
-import { AiOutlineUnorderedList } from "react-icons/ai"; 
+import { BiUserCircle } from "react-icons/bi";
+import { AiOutlineUnorderedList, AiOutlineShoppingCart } from "react-icons/ai";
 import { MdSpaceDashboard } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar() {
 
-        const menuClass = ({ isActive }) =>
-        `flex cursor-pointer items-center rounded-xl p-4  space-x-2
-            ${isActive ? 
-                "text-hijau bg-green-200 font-extrabold" : 
-                "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
-            }`;
+    const menuClass = ({ isActive }) =>
+        `flex cursor-pointer items-center rounded-xl p-4 space-x-2
+        ${isActive
+            ? "text-hijau bg-green-200 font-extrabold"
+            : "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
+        }`;
 
     return (
-        <div id="sidebar"className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg">
+        <div id="sidebar" className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg">
+
             {/* Logo */}
             <div id="sidebar-logo" className="flex flex-col">
                 <span id="logo-title" className="font-poppins-extrabold text-[48px] text-gray-900">
-		                Sedap <b id="logo-dot" className="text-hijau">.</b>
-		            </span>
-                <span id="logo-subtitle" className="font-semibold text-gray-400">Modern Admin Dashboard</span>
+                    Sedap <b id="logo-dot" className="text-hijau">.</b>
+                </span>
+                <span id="logo-subtitle" className="font-semibold text-gray-400">
+                    Modern Admin Dashboard
+                </span>
             </div>
 
             {/* List Menu */}
             <div id="sidebar-menu" className="mt-10">
                 <ul id="menu-list" className="space-y-3">
+
                     <li>
-	                    <NavLink id="menu-1" to="/" className={menuClass}>
-                            <MdSpaceDashboard  className="mr-4 text-xl"/>
-                            Dashboard</NavLink>
-	                  </li>
+                        <NavLink id="menu-1" to="/" className={menuClass}>
+                            <MdSpaceDashboard className="mr-4 text-xl" />
+                            Dashboard
+                        </NavLink>
+                    </li>
+
                     <li>
-	                    <NavLink id="menu-2" to="/orders" className={menuClass}>
-                            <AiOutlineUnorderedList  className="mr-4 text-xl"/>
-                            Orders</NavLink>
-	                  </li>
-	                  <li>
-	                    <NavLink id="menu-3" to="/Customers" className={menuClass}>
-                            <BiUserCircle  className="mr-4 text-xl" />
-                            Customers</NavLink>
-	                  </li>
+                        <NavLink id="menu-2" to="/orders" className={menuClass}>
+                            <AiOutlineUnorderedList className="mr-4 text-xl" />
+                            Orders
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink id="menu-3" to="/customers" className={menuClass}>
+                            <BiUserCircle className="mr-4 text-xl" />
+                            Customers
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink id="menu-4" to="/products" className={menuClass}>
+                            <AiOutlineShoppingCart className="mr-4 text-xl" />
+                            Products
+                        </NavLink>
+                    </li>
+
                 </ul>
             </div>
 
@@ -52,11 +69,24 @@ export default function Sidebar() {
                             <span className="text-gray-600 flex items-center">Add Menus</span>
                         </div>
                     </div>
-                    <img id="footer-avatar" className="w-20 rounded-full" src="https://avatar.iran.liara.run/public/28" />
+
+                    <img
+                        id="footer-avatar"
+                        className="w-20 rounded-full"
+                        src="https://avatar.iran.liara.run/public/28"
+                        alt="avatar"
+                    />
                 </div>
-                <span id="footer-brand" className="font-bold text-gray-400">Sedap Restaurant Admin Dashboard</span>
-                <p id="footer-copyright" className="font-light text-gray-400">&copy; 2025 All Right Reserved</p>
+
+                <span id="footer-brand" className="font-bold text-gray-400">
+                    Sedap Restaurant Admin Dashboard
+                </span>
+
+                <p id="footer-copyright" className="font-light text-gray-400">
+                    &copy; 2025 All Right Reserved
+                </p>
             </div>
+
         </div>
     );
 }

@@ -6,8 +6,9 @@ import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import NotFound from "./pages/NotFound";
 import Guest from "./pages/Guest";
-
+import Products from "./pages/Products";
 import { Route, Routes } from "react-router-dom";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
 
@@ -34,6 +35,8 @@ function App() {
                   <Route path="/orders" element={<Orders />} />
                   <Route path="/customers" element={<Customers />} />
                   <Route path="*" element={<NotFound />} />
+                  <Route path="/products" element={<Products />} />
+                  <Route path="/products/:id" element={<ProductDetail />} />
                 </Routes>
               </div>
             </div>
